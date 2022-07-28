@@ -1,11 +1,12 @@
 import "./NavBar.scss";
-import Button from "../../components/Button/Button";
+//import Button from "../../components/Button/Button";
 
-const NavBar = () => {
+const NavBar = ({reset}) => {
   return (
     <div className="navbar">
-        <h1 className="header">My Todos</h1>
-        <Button className="button-reset" buttonText="Reset" />
+      <h1 className="navbar__header">My Todos</h1>
+      {/* <Button onClick={() =>reset()} buttonText="Reset" />  */}
+      <button className="navbar__reset" onClick={() =>reset()}>Reset</button>
     </div>
 );
 };

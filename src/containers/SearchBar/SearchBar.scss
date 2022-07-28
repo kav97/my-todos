@@ -1,0 +1,21 @@
+.submit-todo {
+    margin: 1rem; 
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+        width: 80%;
+        padding: 4px;
+        border: 2px solid #555555;
+        border-radius: 5px
+    }
+
+    &__append {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        background-color: #555555;
+        color: white;
+        border: none;
+    }
+}

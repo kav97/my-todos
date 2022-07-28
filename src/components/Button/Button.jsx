@@ -1,6 +1,19 @@
-const Button = ({buttonText}) => {
+const Button = ({buttonText, appendButton, delButton, resetButton}) => {
+
+    let buttonStyle = "button";
+
+    if (appendButton) {
+        buttonStyle += " append"
+    } 
+    if (delButton) {
+        buttonStyle += " delete"
+    } 
+    if (resetButton) {
+        buttonStyle += " reset"
+    }
+
     return (
-      <button>{buttonText}</button>
+      <button className={buttonStyle}>{buttonText}</button>
     );
 }
   

@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+
+    .header {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 4rem;
+        height: 2rem;
+    }
+}
